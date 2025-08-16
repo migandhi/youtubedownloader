@@ -1,0 +1,98 @@
+/* File: static/css/style.css */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+h1 {
+    color: #d92626;
+    margin-bottom: 10px;
+}
+p {
+    color: #777;
+    margin-bottom: 30px;
+}
+.form-group input[type="text"] {
+    width: calc(100% - 24px);
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+.options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+.form-group select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+.form-group-checkbox {
+    display: flex;
+    align-items: center;
+}
+#subtitles {
+    margin-right: 8px;
+}
+button {
+    background-color: #d92626;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+button:hover {
+    background-color: #b00e0e;
+}
+.progress-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    margin: 20px 0 10px;
+    overflow: hidden;
+    height: 15px;
+    display: none; /* Hidden by default */
+}
+
+#progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: #d92626;
+    transition: width 0.3s ease;
+}
+
+#status-message {
+    margin-top: 10px;
+    font-size: 14px;
+    min-height: 20px;
+    text-align: left;
+    color: #555;
+}
+.success {
+    color: #28a745;
+}
+.error {
+    color: #dc3545;
+}
